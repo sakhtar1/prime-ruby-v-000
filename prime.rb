@@ -9,8 +9,6 @@ while i < limit
   if int % i == 0
     return false
   end
-  i += i
-  limit = int/i
 end
   return true
 end
