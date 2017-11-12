@@ -1,9 +1,16 @@
-# Add  code here!
 def prime?(int)
-  if int == 1 || int == 0 || int == -1
-    false
-  else
-    sqrt(int).to_i.downto(2).each {|i| return false if int % i == 0}
-    true
+i = 2
+limit = int / i
+
+if int == 1 || int == 0 || int == -1
+  return false
+end
+while i < limit
+  if int % i == 0
+    return false
   end
+  i += i
+  limit = int/i
+end
+  return true
 end
