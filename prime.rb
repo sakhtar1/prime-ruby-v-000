@@ -1,10 +1,11 @@
 def prime?(int)
-  i = 2
-  limit = int / i
+
 
   if int % i == 0
     return false
   end
+  i = 2
+  limit = int / i
   while i < limit
     if int % i == 0
       return false
