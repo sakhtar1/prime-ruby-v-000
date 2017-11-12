@@ -10,5 +10,5 @@ def prime?(int)
       return false
     end
   end
-    return true
+  return true
 end
